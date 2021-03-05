@@ -15,9 +15,12 @@ import os.path
 from os import path
 import shutil
 
+sour = r"C:\Users\spark\Desktop\scnoj"  # change source path here
+dest = r"C:\remp\Techno"  # change destination path here
+
 path_list = []
 
-for filepath in pathlib.Path(r"C:\Users\spark\Desktop\psytrance").glob('**/*'):  # change source folder here
+for filepath in pathlib.Path(sour).glob('**/*'):  # change source folder here
     path_list.append(filepath.absolute())
 
 pub = ""  # publisher
@@ -55,7 +58,7 @@ for i in range(amount):
             art = art.replace(restrict[p], "")
 
 
-    pub_fol = r"C:\remp\Psy-Trance" + "\\" + str(pub)  # change destination folder here
+    pub_fol = str(dest) + "\\" + str(pub)  # change destination folder here
     alb_fol = pub_fol + "\\" + str(art) + " - " + str(alb)
 
 
