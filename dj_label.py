@@ -18,6 +18,12 @@ import shutil
 sour = r"C:\Users\spark\Desktop\scnoj"  # change source path here
 dest = r"C:\remp\Techno"  # change destination path here
 
+print("=" * 52, end = "\n\n")
+print("The destination path is: ")
+print(str(dest))
+print("=" * 52, end = "\n\n")
+
+
 path_list = []
 
 for filepath in pathlib.Path(sour).glob('**/*'):  # change source folder here
